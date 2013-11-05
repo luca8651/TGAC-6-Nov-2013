@@ -185,6 +185,10 @@ Maybe we made our change just to see how something looks, or, for code, to quick
 and we can see that our file has *reverted* to being the most up-to-date one in the repository:
 
     $ git status add_numb.py
+    
+If we decide that we do not want to track the file any more with git but we still want to keep it in the directory (rather than remove it) we can do it with the command:
+
+	$ git rm --cached add_numb.py
 
 ### Looking at our history
 

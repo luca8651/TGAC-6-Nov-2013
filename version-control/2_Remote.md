@@ -28,14 +28,14 @@ Now, we can create a repository on GitHub,
 
 * Log in to [GitHub](https://GitHub.com/)
 * Click on the Create icon on the top right
-* Enter Repository name: "bootcamp-WiSE"
+* Enter Repository name: "TGAC-training-6-10-2013"
 * For the purpose of this exercise we'll create a public repository
 * Make sure the Initialize this repository with a README is *unselected*
 * Click Create Repository
 
 You'll get a page with new information about your repository. We already have our local repository and we will be *pushing* it to GitHub. 
 
-    git remote add origin https://github.com/USERNAME/bootcamp-WiSE.git
+    git remote add origin https://github.com/USERNAME/TGAC-training-6-10-2013.git
     git push -u origin master
 
 This sets up an alias, `origin`, to correspond to the URL of our new repository on GitHub.
@@ -48,7 +48,7 @@ Now copy and paste the second line,
     Compressing objects: 100% (30/30), done.
     Writing objects: 100% (38/38), 3.59 KiB, done.
     Total 38 (delta 9), reused 0 (delta 0)
-    To https://github.com/USERNAME/bootcamp-WiSE.git
+    To https://github.com/USERNAME/TGAC-training-6-10-2013.git
     * [new branch]      master -> master
     Branch master set up to track remote branch master from origin.
 
@@ -68,8 +68,8 @@ Now, let's do something drastic!
 
 Gulp! We've just wiped our local repository! But, as we've a copy on GitHub we can just copy, or *clone* that,
 
-    $ git clone https://github.com/USERNAME/bootcamp-WiSE.git
-    Cloning into 'bootcamp-WiSE'...
+    $ git clone https://github.com/USERNAME/TGAC-training-6-10-2013.git
+    Cloning into 'TGAC-training-6-10-2013'...
     Password for 'https://USERNAME@GitHub.com':
     remote: Counting objects: 38, done.
     remote: Compressing objects: 100% (21/21), done.
@@ -78,9 +78,9 @@ Gulp! We've just wiped our local repository! But, as we've a copy on GitHub we c
 
 In GitHub, there is also an option for called *forking* which essentially allows to do the same thing but forking is done in the web service (that is not using the command line and creating a repository on your local file system).
 
-Now, if we change into `bootcamp-WiSE` we can see that we have our repository,
+Now, if we change into `TGAC-training-6-10-2013` we can see that we have our repository,
 
-    $ cd bootcamp-WiSE
+    $ cd TGAC-training-6-10-2013
     $ git log
 
 and we can see our Git configuration files too,
@@ -113,11 +113,11 @@ First, let us leave our current local repository,
 
     $ cd ..
     $ ls
-    bootcamp-WiSE
+    TGAC-training-6-10-2013
 
 And let us clone our repository again, but this time specify the local directory name,
 
-    $ git clone https://github.com/USERNAME/bootcamp-WiSE.git bootcamp2
+    $ git clone https://github.com/USERNAME/TGAC-training-6-10-2013.git bootcamp2
     Cloning into 'bootcamp2'...
 
 
@@ -128,7 +128,7 @@ So we now have two clones of our repository,
 
 Let's pretend these clones are on two separate machines! So we have 3 versions of our repository - our two local versions, on our separate machines (we're still pretending!) and one on GitHub. So let's go into one of our clones, make some changes, commit these and push these to GitHub:
 
-    $ cd bootcamp-WiSE
+    $ cd TGAC-training-6-10-2013
     $ nano add_numb.py
     $ git add add_numb.py
     $ git commit -m "Added some more comments" add_numb.py
@@ -161,7 +161,7 @@ As a short-hand, we can do a Git *pull* which does a *fetch* then a *merge*,
     $ git commit -m "Added credits" add_numb.py
     $ git push
     $ cd ..
-    $ cd ../bootcamp-WiSE
+    $ cd ../TGAC-training-6-10-2013
     $ git pull
 
 And then check that we have our changes,
@@ -237,9 +237,7 @@ To delete the remote branch:
 
 
 
-## The story so far...
-
-So far, we've now seen how we can,
+We've now seen how we can,
 
 * Host our private repository on GitHub
 * Copy, or clone, our remote repository onto a local machine
@@ -250,4 +248,4 @@ So far, we've now seen how we can,
 
 For the next exercise, please pair up (or work in groups of 3) and work on a shared repository in GitHub.
 
-Previous: [Tracking our changes with a local repository](1_Local.md) Next: [Exercise - collaborating](3_Collaboration.md)
+Previous: [Tracking our changes with a local repository](1_Local.md) 

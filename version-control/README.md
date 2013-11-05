@@ -22,12 +22,11 @@ Version control is typically used for software source code,  but it can also be 
 
 For this session, we'll be using [Git](http://git-scm.com/), a popular version control system and [GitHub](http://github.com), a web-based service providing remote repositories.
 
-## We will focus on:
+## We will look at
 
-1. [Tracking our changes with a local repository](1_Local.md)
-2. [Working from multiple locations with a remote repository](2_Remote.md)
-3. [Collaborating with our colleagues using a repository](3_Collaboration.md)
-4. [Conclusions and further information](4_Conclusion.md)
-5. [Git hints and tips](5_HintsAndTips.md)
+1. [Tracking our changes with a local repository; including branching and merging.](1_Local.md)
+	
+2. [Working from multiple locations with a remote repository - with an introduction to GitHub](2_Remote.md)
+
 
 Next: [Tracking our changes with a local repository](1_Local.md)
